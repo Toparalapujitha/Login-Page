@@ -1,0 +1,99 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+    font-family: ProductSans;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: ProductSans;
+    src: url(../../assests/fonts/ProductSans\ Regular.ttf);
+}
+body
+{
+    height: 812.8px;
+    cursor: pointer;
+    overflow: hidden; 
+}
+
+/* Before Hovering */
+
+.page-container {
+    width: 100%;
+    height: 100%;
+    background-image: url(../../../assests/images/moon.png),url(../../../assests/images/big_reverse_mountain.png),url(../../../assests/images/small_mountain.png),url(../../../assests/images/small_reverse_mountain.png),url(../../../assests/images/big_mountain.png),url(../../../assests/images/sun.png), url(../../../assests/images/nightsky.png);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    filter: brightness(70%);
+    background-size: 15%, 50%, 50%, 50%, 50%, 10%, 100%;
+    background-position: 0px -20px, -80px 300px, 500px 500px, 800px 500px, 1000px 300px, 900px 625px, center;
+}
+#login_page_form
+{
+    width: 600px;
+    height: 350px;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    background-color: aliceblue;
+    border-radius: 70px;
+    border: 5px solid white;
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    cursor: pointer;  
+}
+.input_boxes
+{
+    font-size: 40px;
+    margin: 4% 0% 0% 6%;
+     outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 4px solid white; 
+}
+#login_heading
+{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    padding: 2%;
+}
+#login_button
+{
+    margin: 5% 0% 2% 40%;
+    font-size: 40px;
+    border-radius: 20px;
+    padding: 1%;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.input_boxes::placeholder
+{
+    color: white;
+}
+
+/* After Hovering */
+
+body:hover>.page-container
+{
+    background-image: url(../../../assests/images/moon.png),url(../../../assests/images/big_reverse_mountain.png),url(../../../assests/images/small_mountain.png),url(../../../assests/images/small_reverse_mountain.png),url(../../../assests/images/big_mountain.png),url(../../../assests/images/sun.png), url(../../../assests/images/sky_image.jpeg);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 10%, 50%, 50%, 50%, 50%, 20%, 100%;
+    background-position: 0px 800px, -85px 300px, 490px 500px, 820px 500px, 1000px 320px, 1000px -13px, center;
+    transition: all 2s linear;
+    filter: brightness(100%);
+}
+#login_page_form:hover
+{
+    border: 4px solid white;
+}
+#login_page_form:hover>.input_boxes
+{
+    border-bottom: 3px solid black;
+}
+#login_page_form:hover>.input_boxes::placeholder,#login_page_form:hover>#login_button,#login_page_form:hover>#login_heading
+{
+    color: black;
+}    
+
+
